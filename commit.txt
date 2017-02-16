@@ -1,0 +1,2 @@
+修改 setting.py templates屬性
+修改 views.py templates屬性
