@@ -1,0 +1,22 @@
+<!-- list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>中古機列表</title>
+</head>
+<body>
+<h2>以下販賣二手機列表</h2>
+<hr>
+<table width=400 border=1 bgcolor='#ccffcc'>
+<tr><th>品項名稱</th><th>二手售價</th><th>尺吋大小</th></tr>
+{% for p in products %}
+<tr>
+	<td>{{p.name}}</td>
+	<td>{{p.price}}</td>
+	<td>{{p.size}}</td>
+{% endfor%}
+</table>
+<a href='/list'>回列表</a>
+</body>
+</html>
